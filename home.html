@@ -81,6 +81,25 @@
     <button id="openModal" class="fixed bottom-20 right-5 bg-[#21B28F] text-white px-4 py-2 rounded-full shadow-lg">
       + Create
     </button>
+
+     <div id="modal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
+      <div class="bg-green-600 w-[90%] max-w-md p-6 rounded-2xl">
+        <h2 class="text-white text-xl font-bold mb-4">Add Destination</h2>
+
+        <form id="voyageForm" class="space-y-3">
+          <input id="titre" type="text" placeholder="Titre" class="w-full p-2 rounded" required>
+          <input id="destination" type="text" placeholder="Destination" class="w-full p-2 rounded" required>
+          <input id="note" type="number" min="1" max="5" placeholder="Note" class="w-full p-2 rounded">
+          <input id="categorie" type="text" placeholder="Catégorie" class="w-full p-2 rounded">
+          <input id="image" type="text" placeholder="Image URL" class="w-full p-2 rounded">
+
+          <div class="flex justify-between mt-4">
+            <button type="button" id="closeModal" class="bg-gray-200 px-4 py-2 rounded">Annuler</button>
+            <button class="bg-green-800 text-white px-4 py-2 rounded">Enregistrer</button>
+          </div>
+        </form>
+      </div>
+    </div>
 </main>
   
 
