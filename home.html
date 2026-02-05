@@ -1,147 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>ViaBlog</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViaBlog</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header class="flex items-center justify-between p-4" role="banner">
-        <button aria-label="Open menu" class="text-2xl focus:outline-none focus:ring-2 focus:ring-black">
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </button>
-        <button aria-label="Search" class="text-xl focus:outline-none focus:ring-2 focus:ring-black">
-            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-        </button>
-    </header>
+<body class="bg-gray-100 pb-24">
 
-    <main class="min-h-screen pb-24" role="main">
-        <h1 class="text-lg font-semibold p-6">Blogger Of The Week</h1>
+  <header class="flex items-center justify-between p-4" role="banner">
+    <button class="text-2xl"><i class="fa-solid fa-bars"></i></button>
+    <button class="text-xl"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </header>
 
-        <section class="px-4">
-            <div class="flex gap-3 overflow-x-auto pb-2">
-                <div class="text-center min-w-[70px]">
-                    <img src="https://images.pexels.com/photos/15658164/pexels-photo-15658164.jpeg"
-                        alt="Josefina travel blogger portrait" class="w-14 h-14 rounded-full mx-auto">
-                    <p class="text-xs mt-1">Josefina</p>
-                </div>
-                <div class="text-center min-w-[70px]">
-                    <img src="https://images.pexels.com/photos/15658164/pexels-photo-15658164.jpeg"
-                        alt="Josefina travel blogger portrait" class="w-14 h-14 rounded-full mx-auto">
-                    <p class="text-xs mt-1">Josefina</p>
-                </div>
-                <div class="text-center min-w-[70px]">
-                    <img src="https://images.pexels.com/photos/15658164/pexels-photo-15658164.jpeg"
-                        alt="Josefina travel blogger portrait" class="w-14 h-14 rounded-full mx-auto">
-                    <p class="text-xs mt-1">Josefina</p>
-                </div>
-                <div class="text-center min-w-[70px]">
-                    <img src="https://images.pexels.com/photos/15658164/pexels-photo-15658164.jpeg"
-                        alt="Josefina travel blogger portrait" class="w-14 h-14 rounded-full mx-auto">
-                    <p class="text-xs mt-1">Josefina</p>
-                </div>
-                <div class="text-center min-w-[70px]">
-                    <img src="https://images.pexels.com/photos/15658164/pexels-photo-15658164.jpeg"
-                        alt="Josefina travel blogger portrait" class="w-14 h-14 rounded-full mx-auto">
-                    <p class="text-xs mt-1">Josefina</p>
-                </div>
-                <div class="text-center min-w-[70px]">
-                    <img src="https://images.pexels.com/photos/15658164/pexels-photo-15658164.jpeg"
-                        alt="Josefina travel blogger portrait" class="w-14 h-14 rounded-full mx-auto">
-                    <p class="text-xs mt-1">Josefina</p>
-                </div>
-            </div>
-        </section>
+  
 
-        <section class="px-4 mt-3">
-            <h2 class="font-semibold mb-2">What Do You Want To Road ?</h2>
-            <div class="flex gap-2 overflow-x-auto pb-2">
-                <button class="bg-[#21B28F] text-white px-4 py-1 rounded-full text-sm focus:ring-2 focus:ring-[#21B28F]"
-                    aria-pressed="true">All</button>
-                <button class="border px-4 py-1 rounded-full text-sm focus:ring-2 focus:ring-black">Forest</button>
-                <button class="border px-4 py-1 rounded-full text-sm focus:ring-2 focus:ring-black">Beach</button>
-                <button class="border px-4 py-1 rounded-full text-sm focus:ring-2 focus:ring-black">River</button>
-                <button class="border px-4 py-1 rounded-full text-sm focus:ring-2 focus:ring-black">Mountains</button>
-            </div>
-        </section>
-
-        <section class="px-4 mt-4">
-            <div class="bg-white rounded-2x1 shadow-md overflow-hidden">
-                <div class="relative bg-[url('img7.webp')] bg-cover bg-center h-[30vh]">
-                    <i class="fa-solid fa-heart absolute top-3 right-3 text-gray-500" aria-hidden="true"></i>
-                    <a href="article.html" class="absolute inset-0" aria-label="Read article Yellow River"></a>
-                </div>
-                <div class="p-3 flex justify-between">
-                    <div>
-                        <h3 class="font-semibold">Yellow river</h3>
-                        <h5>By Locas</h5>
-                    </div>
-                    <div class="flex text-xs text-gray-500 gap-3 mt-1">
-                        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>China</span>
-                        <span><i class="fa-solid fa-clock" aria-hidden="true"></i>15 min</span>
-                        <span><i class="fa-solid fa-eye" aria-hidden="true"></i>12 k</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="flex flex-col md:flex-row">
-            <section class="flex-1 px-4 mt-4">
-                <div class="bg-white rounded-2x1 shadow-md overflow-hidden">
-                    <div
-                        class="relative bg-[url('https://images.pexels.com/photos/31348064/pexels-photo-31348064.jpeg')] bg-cover bg-center h-[20vh]">
-                        <i class="fa-solid fa-heart absolute top-3 right-3 text-gray-500" aria-hidden="true"></i>
-                    </div>
-                    <div class="p-3 flex justify-between">
-                        <div>
-                            <h3 class="font-semibold">Yellow river</h3>
-                            <h5>By Locas</h5>
-                        </div>
-                        <div class="flex text-xs text-gray-500 gap-3 mt-1">
-                            <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>China</span>
-                            <span><i class="fa-solid fa-clock" aria-hidden="true"></i>15 min</span>
-                            <span><i class="fa-solid fa-eye" aria-hidden="true"></i>12 k</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="px-4 mt-4 flex-1">
-                <div class="bg-white rounded-2x1 shadow-md overflow-hidden">
-                    <div
-                        class="relative bg-[url('https://images.pexels.com/photos/16586196/pexels-photo-16586196.jpeg')] bg-cover bg-center h-[20vh]">
-                        <i class="fa-solid fa-heart absolute top-3 right-3 text-gray-500" aria-hidden="true"></i>
-                    </div>
-                    <div class="p-3 flex justify-between">
-                        <div>
-                            <h3 class="font-semibold">Yellow river</h3>
-                            <h5>By Locas</h5>
-                        </div>
-                        <div class="flex text-xs text-gray-500 gap-3 mt-1">
-                            <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>China</span>
-                            <span><i class="fa-solid fa-clock" aria-hidden="true"></i>15 min</span>
-                            <span><i class="fa-solid fa-eye" aria-hidden="true"></i>12 k</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="fixed bottom-0 left-0 w-full bg-white border-t flex justify-around py-3">
-        <button class="text-[#21B28F]"><i class="fa-solid fa-house"></i></button>
-        <button class="text-gray-600"><i class="fa-solid fa-location-dot"></i></button>
-        <button class="text-gray-600"><i class="fa-solid fa-heart"></i></button>
-        <button class="text-gray-600"><a href="profil.html" class="absolute inset-0"></a><i
-                class="fa-solid fa-user"></i></button>
-    </footer>
-
+  <script src="app.js"></script>
 </body>
 
 </html>
